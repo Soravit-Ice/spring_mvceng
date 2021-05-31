@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Eng Mvc</title>
+</head>
+<body>
+<form th:action="@{/}">
+<div  th:align="center">
+    <label>ANSWER</label>
+    <div th:each="map : ${mapsList}">
+        <div th:each="mapEntry : ${map}">
+            <span th:text="${mapEntry.key}"></span> =
+            <span th:text="${mapEntry.value}"></span>
+        </div>
+    </div>
+    <button type="submit" > Back </button>
+</div>
+</form>
+
+</body>
+</html>

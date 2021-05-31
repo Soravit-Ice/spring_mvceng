@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Eng Mvc</title>
+</head>
+<body>
+<form th:action="@{/checkeng/{input}}" th:align="center">
+    <label>Input color</label>
+    <br>
+    <input type="text"  th:name="input"/>
+    <button type="submit" > WordCount </button>
+</form>
+
+</body>
+</html>
